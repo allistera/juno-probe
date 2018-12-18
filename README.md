@@ -1,6 +1,6 @@
 # Juno Probe
 
-HTTP Request Proxy written in Ruby. Used by the [Juno](https://github.com/allistera/juno) Uptime Monitoring application for checking the state of websites.
+HTTP/ICMP Request Proxy written in Ruby. Used by the [Juno](https://github.com/allistera/juno) Uptime Monitoring application for checking the state of websites or hosts.
 
 ## Quick Start
 

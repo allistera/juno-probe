@@ -20,3 +20,8 @@ post '/v1/request' do
   halt 401 unless AuthenticateRequest.authenticated?(env.fetch('HTTP_AUTHORIZATION', ''))
   HttpRequest.run(request)
 end
+
+post '/v1/ping' do
+  halt 401 unless AuthenticateRequest.authenticated?(env.fetch('HTTP_AUTHORIZATION', ''))
+  PingRequest.run(request)
+end
